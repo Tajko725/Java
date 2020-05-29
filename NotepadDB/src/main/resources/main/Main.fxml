@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="Plik">
+            <MenuItem id="new_file_mi"   mnemonicParsing="false" onAction="#New" text="Nowy">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem id="open_file_mii" mnemonicParsing="false" onAction="#Open" text="Otwórz">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem id="save_file_mi" mnemonicParsing="false" onAction="#Save" text="Zapisz">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem id="saveAs_file_mi" mnemonicParsing="false" onAction="#SaveAs" text="Zapisz Jako">
+                <accelerator>
+                    <KeyCodeCombination alt="DOWN" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem id="close_file_mi" mnemonicParsing="false" onAction="#Close" text="Zamknij">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edycja">
+            <MenuItem id="cut_edit_mi" mnemonicParsing="false" onAction="#Cut" text="Wytnij">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="Y" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem id="copy_edit_mi" mnemonicParsing="false" onAction="#Copy" text="Kopiuj">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem id="paste_edit_mi" mnemonicParsing="false" onAction="#Paste" text="Wklej">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem id="selectAll_edit_mi" fx:id="selectAll_edit_mi" mnemonicParsing="false"
+                      onAction="#SelectAll" text="Zaznacz wszystko">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <CheckMenuItem id="wrapText_edit_mi" fx:id="wrapText_cmi" mnemonicParsing="false"
+                           onAction="#IsWrapText" text="Wrap tekst">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </CheckMenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Pomoc">
+            <MenuItem id="aboutApp_help_mi" fx:id="aboutApp_help_mi" mnemonicParsing="false" onAction="#About"
+                      text="Informacje o aplikacji">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F1" control="UP" meta="UP" shift="UP" shortcut="ANY"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
+    <TabPane id="tabPane_tp" fx:id="tabPane_tp" layoutY="26.0" prefHeight="376.0" prefWidth="600.0"
+             tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="-2.0" AnchorPane.rightAnchor="0.0"/>
+</AnchorPane>
