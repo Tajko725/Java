@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/NotepadDB/NotepadDB.iml" filepath="$PROJECT_DIR$/NotepadDB/NotepadDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NotepadDBWithoutMAVEN/NotepadDBWithoutMAVEN.iml" filepath="$PROJECT_DIR$/NotepadDBWithoutMAVEN/NotepadDBWithoutMAVEN.iml" />
     </modules>
   </component>
 </project>

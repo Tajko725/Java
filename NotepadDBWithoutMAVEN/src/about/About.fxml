@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="188.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/8.0.172"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="about.AboutController">
+   <Label layoutX="66.0" layoutY="6.0" text="Notepad DB">
+      <font>
+         <Font name="System Bold" size="24.0"/>
+      </font>
+   </Label>
+   <Label layoutX="9.0" layoutY="41.0" prefHeight="53.0" prefWidth="248.0"
+          text="Prosta alternatywa dla Notepad++, która zamiast odczytywać plików z dysku, odczytuje je z bazy danych"
+          textAlignment="CENTER" wrapText="true"/>
+   <Label layoutX="14.0" layoutY="103.0" text="Twórca:">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="124.0" text="Kontakt:">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Label>
+   <Label layoutX="93.0" layoutY="103.0" text="Tajemniczy"/>
+   <Hyperlink fx:id="email_hl" layoutX="90.0" layoutY="121.0" onMouseClicked="#CopyEmail" text="kursocenter@gmail.com"/>
+   <Label layoutX="14.0" layoutY="146.0" text="Technologia:">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Label>
+   <Label layoutX="93.0" layoutY="146.0" prefHeight="35.0" prefWidth="164.0"
+          text="Java 8, Inteliij IDEA 2020, SceneBuilder 2.x" wrapText="true"/>
+</AnchorPane>
