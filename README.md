@@ -1,2 +1,2 @@
 # Java
-Foldr with Java projects
+Folder with <b>Java</b> projects
